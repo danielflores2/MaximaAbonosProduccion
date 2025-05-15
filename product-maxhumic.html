@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo/fav.webp" type="image/webp">
+    <title>maxHumic - Máxima Abonos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logotipo.webp" alt="Maxima Logo">
+            </a>
+            
+            <div class="mobile-right-items">
+                <div class="language-dropdown d-lg-none">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="mobileLangDropdown" data-bs-toggle="dropdown">
+                            <img src="assets/images/banderas/gb.png" alt="English">
+                            <span>EN</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/gb.png" alt="English">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/es.png" alt="Spanish">
+                                    <span>Español</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/fr.png" alt="French">
+                                    <span>Français</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span data-translate="home">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">
+                            <i class="fas fa-box"></i>
+                            <span data-translate="productos">Productos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope"></i>
+                            <span data-translate="contacto">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="language-dropdown d-none d-lg-block">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="desktopLangDropdown" data-bs-toggle="dropdown">
+                            <img src="assets/images/banderas/gb.png" alt="English">
+                            <span>EN</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/gb.png" alt="English">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/es.png" alt="Spanish">
+                                    <span>Español</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/banderas/fr.png" alt="French">
+                                    <span>Français</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="product-hero-content">
+                        <h1 class="product-title">max<span class="highlight">Humic</span></h1>
+                        <div class="product-subtitle">
+                            <span class="line"></span>
+                            <span data-translate="Ácidos Húmicos Concentrados">Ácidos Húmicos Concentrados</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#f9faf7" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,16C1200,11,1320,21,1380,26.7L1440,32L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    
+
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="product-main-image">
+                        <img src="assets/images/productos/MaxHumic.webp" alt="maxHumic" class="img-fluid">
+                        <div class="image-backdrop"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mx-auto">
+                    <div class="product-intro">
+                        <div class="section-badge"><span data-translate="CALIDAD PREMIUM">CALIDAD PREMIUM</span></div>
+                        <h2 class="section-title" data-translate="Solución avanzada para mejorar la estructura del suelo">Solución avanzada para mejorar la estructura del suelo</h2>
+                        <div class="intro-description">
+                            <p data-translate="Es un producto formulado por extracción de ácidos húmicos procedentes de leonardita americana. MAXHUMIC mejora la fertilidad y estructura del suelo además de la actividad de microorganismos beneficiosos para el suelo. Actúa como desbloqueante de suelos gracias al poder quelante de los ácidos húmicos y fúlvicos haciendo mucho mas asimilables los micro y macroelementos, es por esto que profiere una actividad bioestimulante en mucho factores.">Es un producto formulado por extracción de ácidos húmicos procedentes de leonardita americana. MAXHUMIC mejora la fertilidad y estructura del suelo además de la actividad de microorganismos beneficiosos para el suelo. Actúa como desbloqueante de suelos gracias al poder quelante de los ácidos húmicos y fúlvicos haciendo mucho mas asimilables los micro y macroelementos, es por esto que profiere una actividad bioestimulante en mucho factores.</p>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-seedling"></i> <span data-translate="Mejora estructura del suelo">Mejora estructura del suelo</span></span>
+                            <span class="feature"><i class="fas fa-water"></i> <span data-translate="Alta Concentración">Alta Concentración</span></span>
+                            <span class="feature"><i class="fas fa-leaf"></i> <span data-translate="Optimiza absorción nutrientes">Optimiza absorción nutrientes</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="product-specs">
+                        <h3 data-translate="Composición">Composición</h3>
+                        <p data-translate="Grupo 4.1.2. Ácidos Húmicos procedentes de leonardita">Grupo 4.1.2. Ácidos Húmicos procedentes de leonardita</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th data-translate="DETERMINACIÓN">DETERMINACIÓN</th>
+                                    <th data-translate="ESPECIFICACIÓN">ESPECIFICACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-translate="Extracto Húmico Total">Extracto Húmico Total</td>
+                                    <td>15 % p/p</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Ácidos Húmicos">Ácidos Húmicos</td>
+                                    <td>10 % p/p</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Ácidos Fúlvicos">Ácidos Fúlvicos</td>
+                                    <td>5 % p/p</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Óxido de Potasio (K2O) soluble en agua">Óxido de Potasio (K2O) soluble en agua</td>
+                                    <td>6 % p/p</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="MP de Leonardita procesada">MP de Leonardita procesada</td>
+                                    <td>80% p/p</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p data-translate="pH: 9,5 - 11,5">pH: 9,5 - 11,5</p>
+                        <p data-translate="Densidad: 1,05 g/ml">Densidad: 1,05 g/ml</p>
+                        <p data-translate="Contenido en metales pesados inferior a los límites autorizados para esta clasificación. Clase A">Contenido en metales pesados inferior a los límites autorizados para esta clasificación. Clase A</p>
+                        <p data-translate="No realizar mezclas con productos cálcicos o ácidos.">No realizar mezclas con productos cálcicos o ácidos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-usage">
+                        <h3 data-translate="Modo de Empleo">Modo de Empleo</h3>
+                        <h5 class="mt-3" data-translate="Fertirrigación">Fertirrigación</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th data-translate="Cultivo">Cultivo</th>
+                                    <th data-translate="Dosis L/Ha" class="text-end">Dosis L/Ha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-translate="Hortícolas y ornamentales">Hortícolas y ornamentales</td>
+                                    <td class="text-end">15 - 20 L/Ha</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Cítricos, frutales y vid">Cítricos, frutales y vid</td>
+                                    <td class="text-end">30 - 40 L/Ha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="mt-3" data-translate="Foliar">Foliar</h5>
+                        <table class="table table-sm">
+                             <thead>
+                                <tr>
+                                    <th data-translate="Cultivo">Cultivo</th>
+                                    <th data-translate="Dosis c.c./100L. de agua" class="text-end">Dosis c.c./100L. de agua</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-translate="Hortícolas y ornamentales">Hortícolas y ornamentales</td>
+                                    <td data-translate="300 c.c./100L. de agua" class="text-end">300 c.c./100L. de agua</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Cítricos, frutales y vid">Cítricos, frutales y vid</td>
+                                    <td data-translate="300 c.c./100L. de agua" class="text-end">300 c.c./100L. de agua</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="mt-3" data-translate="Hidropónico">Hidropónico</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th data-translate="Cultivo">Cultivo</th>
+                                    <th data-translate="Dosis L/Ha" class="text-end">Dosis L/Ha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-translate="Hortícolas y ornamentales">Hortícolas y ornamentales</td>
+                                    <td class="text-end">1 - 1,5 L/Ha</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="Cítricos, frutales y vid">Cítricos, frutales y vid</td>
+                                    <td class="text-end">1 - 1,5 L/Ha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                         <p class="mt-2" data-translate="Se recomienda realizar aplicaciones cada 15-20 días durante todo el ciclo del cultivo.">Se recomienda realizar aplicaciones cada 15-20 días durante todo el ciclo del cultivo.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="product-benefits">
+                        <h3 data-translate="Beneficios del Producto">Beneficios del Producto</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Mejora estructura del suelo">Mejora la estructura del suelo</span></li>
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Aumenta capacidad CIC">Aumenta la capacidad de Intercambio Catiónico (CIC)</span></li>
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Optimiza absorción nutrientes">Optimiza la absorción de nutrientes</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Promueve desarrollo radicular">Promueve el desarrollo radicular</span></li>
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Incrementa actividad microbiana">Incrementa la actividad microbiana del suelo</span></li>
+                                    <li><i class="fas fa-check text-success me-2"></i> <span data-translate="Reduce compactación">Reduce la compactación del suelo</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="product-compatibility">
+                         <h3 data-translate="Incompatibilidades">Incompatibilidades</h3>
+                         <p data-translate="Puede mezclarse con los abonos minerales a excepción de los de reacción ácida, productos con calcio y aceites minerales.">Puede mezclarse con los abonos minerales a excepción de los de reacción ácida, productos con calcio y aceites minerales.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-warning">
+                        <h4 data-translate="Advertencias"><i class="fas fa-exclamation-triangle"></i> Advertencias</h4>
+                        <p data-translate="H314: Provoca quemaduras graves en la piel y lesiones oculares graves.">H314: Provoca quemaduras graves en la piel y lesiones oculares graves.</p>
+                        <p data-translate="P280 Llevar guantes/prendas/gafas/mascara de protección.">P280 Llevar guantes/prendas/gafas/mascara de protección.</p>
+                        <p data-translate="P310 Llamar inmediatamente a un centro de toxicología o médico.">P310 Llamar inmediatamente a un centro de toxicología o médico.</p>
+                        <p data-translate="P102 Mantener fuera del alcance de los niños.">P102 Mantener fuera del alcance de los niños.</p>
+                        <p data-translate="P270 No comer, beber ni fumar durante su utilización.">P270 No comer, beber ni fumar durante su utilización.</p>
+                        <p data-translate="P304+P340 En caso de inhalación: Transportar a la persona afectada al aire libre y mantenerla en una posición que facilite la respiración.">P304+P340 En caso de inhalación: Transportar a la persona afectada al aire libre y mantenerla en una posición que facilite la respiración.</p>
+                        <p data-translate="P303+P361+P353 En caso de contacto con la piel o pelo: Quitar inmediatamente todas las prendas contaminadas. Aclararse la piel con agua/ducharse.">P303+P361+P353 En caso de contacto con la piel o pelo: Quitar inmediatamente todas las prendas contaminadas. Aclararse la piel con agua/ducharse.</p>
+                        <p data-translate="P305+P351+P338 En caso de contacto con los ojos: Aclarar cuidadosamente con agua durante varios minutos. Quitar inmediatamente las lentes de contacto si lleva y resulta fácil. Seguir aclarando.">P305+P351+P338 En caso de contacto con los ojos: Aclarar cuidadosamente con agua durante varios minutos. Quitar inmediatamente las lentes de contacto si lleva y resulta fácil. Seguir aclarando.</p>
+                        <p data-translate="Información Toxicológica: Instituto Nacional de Toxicología Teléfono: 91 562 04 20">Información Toxicológica: Instituto Nacional de Toxicología Teléfono: 91 562 04 20</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="formats-section text-center">
+                        <h3 data-translate="FORMATOS">FORMATOS</h3>
+                        <div class="format-item">
+                            <i class="fas fa-flask"></i> <p data-translate="20 L. (21 Kilos)">20 L. (21 Kilos)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <div class="product-cta">
+                        <a href="contact.html" class="btn-contact">
+                            <span data-translate="Solicitar Información">Solicitar Información</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="products.html" class="btn-back">
+                            <i class="fas fa-arrow-left"></i>
+                            <span data-translate="Volver a Productos">Volver a Productos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center" data-translate="Productos Relacionados">Productos Relacionados</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="related-product-card">
+                        <div class="related-product-image">
+                            <img src="assets/images/productos/MaxAmino.webp" alt="maxAmino" class="img-fluid">
+                        </div>
+                        <div class="related-product-info">
+                            <h3>maxAmino</h3>
+                            <p data-translate="Aminoácidos líquidos de origen vegetal para estimular el crecimiento">Aminoácidos líquidos de origen vegetal para estimular el crecimiento</p>
+                            <a href="product-maxamino.html" class="btn-view" data-translate="Ver Detalles">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="related-product-card">
+                        <div class="related-product-image">
+                            <img src="assets/images/productos/MaxCalcio.webp" alt="maxCalcio" class="img-fluid">
+                        </div>
+                        <div class="related-product-info">
+                            <h3>maxCalcio</h3>
+                            <p data-translate="Fertilizante rico en calcio para mejorar la calidad y firmeza de frutos">Fertilizante rico en calcio para mejorar la calidad y firmeza de frutos</p>
+                            <a href="product-maxcalcio.html" class="btn-view" data-translate="Ver Detalles">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white pt-5 pb-3" style="background-color: #0a0a0a">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 margin-bottom-10">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/images/logo/logotipoblanco.webp"
+                  alt="Maxima Logo"
+                />
+              </a>
+              <div class="offset-top-20">
+                <p class="mb-1">
+                  <a
+                    href="mailto:comercial@maximaabonos.es"
+                    class="text-white"
+                    style="letter-spacing: 0.5px"
+                  >
+                    comercial@maximaabonos.es
+                  </a>
+                </p>
+                <p class="mb-1" data-translate="tel">Tel: +34 950 484 558</p>
+                <hr class="border-light my-2" style="width: 70px" />
+                <p class="mb-1">Paraje las Chozas de Redondo S.N.</p>
+                <p class="mb-0" data-translate="C.P. 04700 - El Ejido (Almería) - España">C.P. 04700 - El Ejido (Almería) - España</p>
+              </div>
+            </div>
+    
+            <div class="col-md-6 mb-4 text-end">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" class="text-white text-decoration-none" data-translate="home">Inicio</a>
+                </li>
+                <li>
+                  <a href="products.html" class="text-white text-decoration-none" data-translate="productos"
+                    >Productos</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white text-decoration-none" data-translate="contacto"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <hr class="border-secondary mt-4" />
+    
+          <div class="col-md-12 text-center d-flex justify-content-center gap-2">
+            <p class="copyright" data-translate="2025 Máxima Abonos, S.L. Todos los derechos reservados.">
+              &copy; 2025 Máxima Abonos, S.L. Todos los derechos reservados.
+              
+            </p>
+            <p class="copyright">
+              <a href="#" class="privacy-link" data-translate="Política de Privacidad">Política de Privacidad</a>
+            </p>
+            
+          </div>
+        </div>
+      </footer>
+
+
+      <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

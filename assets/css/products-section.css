@@ -1,0 +1,109 @@
+
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 15px 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 0;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #28430a;
+  border-color: #28430a;
+}
+
+.btn-primary:hover {
+  background-color: #1a2c06;
+  border-color: #1a2c06;
+}
+
+/* Section spacing */
+.section-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-md-105 {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+/* Offset utilities */
+
+.offset-top-20 {
+  margin-top: 20px;
+}
+
+.offset-top-40 {
+  margin-top: 40px;
+}
+
+.offset-md-top-70 {
+  margin-top: 70px;
+}
+
+.offset-md-top-40 {
+  margin-top: 40px;
+}
+
+.offset-top-100 {
+  margin-top: 100px;
+}
+
+
+
+
+/* Sprite container styles */
+.sprite-container {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.sprite {
+  width: 400px;
+  height: 400px;
+  background-image: url('../images/spritesheet_orgaonk.png');
+  background-size: 48000px 400px;
+
+}
+
+/* Fallback paths in case the main one doesn't work */
+[data-index="0"].sprite {
+  background-image: url('../images/spritesheet_orgaonk.png');
+}
+
+[data-index="1"].sprite {
+  background-image: url('../images/spritesheet_orgaonk.png');
+}
+
+[data-index="2"].sprite {
+  background-image: url('../images/spritesheet_orgaonk.png');
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fullwidth {
+  width: 100%;
+}
+

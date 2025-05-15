@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link rel="icon" href="assets/images/logo/fav.webp" type="image/webp" />
+    <title data-translate="Productos - Maxima Abonos">
+      Productos - Maxima Abonos
+    </title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo/logotipo.webp" alt="Maxima Logo" />
+        </a>
+
+        <!-- Mobile Right Items (Language + Toggle) -->
+        <div class="mobile-right-items">
+          <!-- Mobile Language Dropdown -->
+          <div class="language-dropdown d-lg-none">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="mobileLangDropdown"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/images/banderas/gb.png" alt="English" />
+                <span>EN</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/gb.png" alt="English" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/es.png" alt="Spanish" />
+                    <span>Español</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/fr.png" alt="French" />
+                    <span>Français</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                <span data-translate="home">Inicio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">
+                <i class="fas fa-box"></i>
+                <span data-translate="productos">Productos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span data-translate="contacto">Contacto</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Desktop Language Dropdown -->
+          <div class="language-dropdown d-none d-lg-block">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="desktopLangDropdown"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/images/banderas/gb.png" alt="English" />
+                <span>EN</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/gb.png" alt="English" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/es.png" alt="Spanish" />
+                    <span>Español</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/fr.png" alt="French" />
+                    <span>Français</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <div class="product-hero-content" data-aos="fade-up">
+              <h1 class="product-title">
+                <span data-translate="Nuestros productos"
+                  >Nuestros productos</span
+                >
+              </h1>
+              <div class="product-subtitle">
+                <span class="line"></span>
+                <p data-translate="Fertilizantes Orgánicos de Alta Calidad">
+                  Fertilizantes Orgánicos de Alta Calidad
+                </p>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-hero-wave">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,16C1200,11,1320,21,1380,26.7L1440,32L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section class="products-showcase">
+      <div class="container">
+        <!-- Product Categories Filter -->
+        <div class="product-categories" data-aos="fade-up">
+          <button
+            class="category-btn active"
+            data-filter="all"
+            data-translate="Todos"
+          >
+            Todos
+          </button>
+          <!-- <button class="category-btn" data-filter="liquidos" data-translate="Líquidos">Liquids</button>
+                <button class="category-btn" data-filter="solidos" data-translate="Sólidos">Solids</button>
+                <button class="category-btn" data-filter="especiales" data-translate="Especiales">Specials</button> -->
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row products-grid">
+          <!-- AON NK Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos"
+            data-aos="fade-up"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/Aonk.webp"
+                  alt="AON NK"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">AON NK</h3>
+                <p
+                  class="product-description"
+                  data-translate="Fertilizante líquido con alta concentración de nitrógeno y potasio. Ideal para cultivos en fase de crecimiento y producción."
+                >
+                Fertilizante líquido con alta concentración de nitrógeno y potasio. Ideal para cultivos en fase de crecimiento y producción.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado Ecológico</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-leaf"></i>
+                    <span data-translate="100% Vegetal"
+                      >100% Vegetal</span
+                    ></span
+                  >
+                </div>
+                <a href="product-aon-nk.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOI PLUS Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos especiales"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/Molplus.webp"
+                  alt="MOL PLUS"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">MOL PLUS</h3>
+                <p
+                  class="product-description"
+                  data-translate="Abono orgánico NK líquido, ecológico y rico en materia orgánica. Revitaliza el suelo, mejora la nutrición y estimula raíces fuertes."
+                >
+                Abono orgánico NK líquido, ecológico y rico en materia orgánica. Revitaliza el suelo, mejora la nutrición y estimula raíces fuertes.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-flask"></i>
+                    <span data-translate="Alta Concentración"
+                      >Alta concentración</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-tint"></i>
+                    <span data-translate="Rápida Absorción"
+                      >Rápida Absorción</span
+                    ></span
+                  >
+                </div>
+                <a href="product-mol-plus.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver Detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ORGA ON Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/Orgaonk.webp"
+                  alt="ORGA ON"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">ORGA ON</h3>
+                <p
+                  class="product-description"
+                  data-translate="Regenerador de suelos orgánico y ecológico en formato líquido. Enriquece la tierra, estimula el crecimiento y fortalece las defensas naturales."
+                >
+                Regenerador de suelos orgánico y ecológico en formato líquido. Enriquece la tierra, estimula el crecimiento y fortalece las defensas naturales.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado ecológico</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-seedling"></i>
+                    <span data-translate="Microorganismos Activos"
+                      >Microorganismos Activos</span
+                    ></span
+                  >
+                </div>
+                <a href="product-orga-on.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxAmino Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxAmino.webp"
+                  alt="maxAmino"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">maxAmino</h3>
+                <p
+                  class="product-description"
+                  data-translate="Aminoácidos puros de origen vegetal. Un potente bioestimulante que impulsa el enraizamiento, la maduración y la resistencia de tus cultivos."
+                >
+                Aminoácidos puros de origen vegetal. Un potente bioestimulante que impulsa el enraizamiento, la maduración y la resistencia de tus cultivos.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado Ecológico</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-leaf"></i>
+                    <span data-translate="Origen Vegetal"
+                      >Origen Vegetal</span
+                    ></span
+                  >
+                </div>
+                <a href="product-maxamino.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxCalcio Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos especiales"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxCalcio.webp"
+                  alt="maxCalcio"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">
+                  maxCalcio
+                </h3>
+                <p
+                  class="product-description"
+                  data-translate="Calcio y magnesio líquidos con aminoácidos. Fortalece tus plantas, previene carencias y mejora la calidad de frutos y tejidos vegetales.
+                  "
+                >
+                Calcio y magnesio líquidos con aminoácidos. Fortalece tus plantas, previene carencias y mejora la calidad de frutos y tejidos vegetales.
+
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-flask"></i>
+                    <span data-translate="Alta Absorción"
+                      >Alta absorción</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-shield-alt"></i>
+                    <span data-translate="Previene Deficiencias"
+                      >Previene Deficiencias</span
+                    ></span
+                  >
+                </div>
+                <a href="product-maxcalcio.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxFlor Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item especiales"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxiFlor.webp"
+                  alt="maxFlor"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">maxFlor</h3>
+                <p
+                  class="product-description"
+                  data-translate="Potenciador de floración y cuajado con aminoácidos y micronutrientes. Maximiza la fructificación y ayuda a tus plantas a superar el estrés."
+                >
+                Potenciador de floración y cuajado con aminoácidos y micronutrientes. Maximiza la fructificación y ayuda a tus plantas a superar el estrés.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-flower"></i>
+                    <span data-translate="Floración">Floración</span></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-star"></i>
+                    <span data-translate="Alta Calidad"
+                      >Alta Calidad</span
+                    ></span
+                  >
+                </div>
+                <a href="product-maxflor.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxMax Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item liquidos"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxMax.webp"
+                  alt="maxMax"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">maxMax</h3>
+                <p
+                  class="product-description"
+                  data-translate="L-aminoácidos de hidrólisis enzimática para un shock de energía. Recupera y potencia tus cultivos rápidamente, fortaleciéndolos frente al estrés."
+                >
+                L-aminoácidos de hidrólisis enzimática para un shock de energía. Recupera y potencia tus cultivos rápidamente, fortaleciéndolos frente al estrés.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-balance-scale"></i>
+                    <span data-translate="NPK Equilibrado"
+                      >NPK Equilibrado</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-check-double"></i>
+                    <span data-translate="Completo">Completo</span></span
+                  >
+                </div>
+                <a href="product-maxmax.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxHumic Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item solidos"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxHumic.webp"
+                  alt="maxHumic"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">maxHumic</h3>
+                <p
+                  class="product-description"
+                  data-translate="Ácidos húmicos y fúlvicos de leonardita. Mejora la fertilidad, estructura y vida del suelo, desbloqueando nutrientes para tus cultivos."
+                >
+                Ácidos húmicos y fúlvicos de leonardita. Mejora la fertilidad, estructura y vida del suelo, desbloqueando nutrientes para tus cultivos.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-seedling"></i>
+                    <span data-translate="Mejora el suelo"
+                      >Mejora el suelo</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-water"></i>
+                    <span data-translate="Alta Concentración"
+                      >Alta Concentración</span
+                    ></span
+                  >
+                </div>
+                <a href="product-maxhumic.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxMicros Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item especiales"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxMicros.webp"
+                  alt="maxMicros"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">
+                  maxMicros
+                </h3>
+                <p
+                  class="product-description"
+                  data-translate="Microelementos quelatados en fórmula ecológica. Corrige carencias y asegura el equilibrio nutritivo esencial para la vitalidad de tus plantas."
+                >
+                Microelementos quelatados en fórmula ecológica. Corrige carencias y asegura el equilibrio nutritivo esencial para la vitalidad de tus plantas.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-microscope"></i>
+                    <span data-translate="Microelementos"
+                      >Microelementos</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-sync"></i>
+                    <span data-translate="Corrector">Corrector</span></span
+                  >
+                </div>
+                <a href="product-maxmicros.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxMicros Product -->
+          <div
+            class="col-lg-4 col-md-6 product-item especiales"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/productos/MaxCobre.webp"
+                  alt="maxMicros"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">maxCobre</h3>
+                <p
+                  class="product-description"
+                  data-translate="Cobre complejado de alta asimilación. Fortalece las defensas naturales de tus plantas y optimiza la fotosíntesis para un crecimiento vigoroso."
+                >
+                Cobre complejado de alta asimilación. Fortalece las defensas naturales de tus plantas y optimiza la fotosíntesis para un crecimiento vigoroso.
+                </p>
+                <div class="product-features">
+                  <span class="feature"
+                    ><i class="fas fa-microscope"></i>
+                    <span data-translate="Microelementos"
+                      >Microelementos</span
+                    ></span
+                  >
+                  <span class="feature"
+                    ><i class="fas fa-sync"></i>
+                    <span data-translate="Corrector">Corrector</span></span
+                  >
+                </div>
+                <a href="product-maxcobre.html" class="btn-product">
+                  <span data-translate="Ver Detalles">Ver detalles</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="text-white pt-5 pb-3" style="background-color: #0a0a0a">
+        <div class="container">
+          <div class="row">
+            <!-- Nombre de la empresa y contacto -->
+  
+            <div class="col-md-6 mb-4 margin-bottom-10">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/images/logo/logotipoblanco.webp"
+                  alt="Maxima Logo"
+                />
+              </a>
+              <div class="offset-top-20">
+                <p class="mb-1">
+                  <a
+                    href="mailto:comercial@maximaabonos.es"
+                    class="text-white"
+                    style="letter-spacing: 0.5px"
+                  >
+                    comercial@maximaabonos.es
+                  </a>
+                </p>
+                <p class="mb-1" data-translate="tel">Tel: +34 950 484 558</p>
+                <hr class="border-light my-2" style="width: 70px" />
+                <p class="mb-1">Paraje las Chozas de Redondo S.N.</p>
+                <p class="mb-0" data-translate="C.P. 04700 - El Ejido (Almería) - España">C.P. 04700 - El Ejido (Almería) - España</p>
+              </div>
+            </div>
+  
+            <!-- Enlaces justificados a la derecha -->
+            <div class="col-md-6 mb-4 text-end">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none" data-translate="home">Inicio</a>
+                </li>
+                <li>
+                  <a href="/products.html" class="text-white text-decoration-none" data-translate="productos"
+                    >Productos</a
+                  >
+                </li>
+                <li>
+                  <a href="/contact.html" class="text-white text-decoration-none" data-translate="contacto"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <hr class="border-secondary mt-4" />
+  
+          <div class="col-md-12 text-center d-flex justify-content-center gap-2">
+            <p class="copyright" data-translate="2025 Máxima Abonos, S.L. Todos los derechos reservados.">
+              &copy; 2025 Máxima Abonos, S.L. Todos los derechos reservados.
+              
+            </p>
+            <p class="copyright">
+              <a href="#" class="privacy-link" data-translate="Política de Privacidad">Política de Privacidad</a>
+            </p>
+            
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

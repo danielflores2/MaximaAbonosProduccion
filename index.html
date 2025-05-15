@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link rel="icon" href="assets/images/logo/fav.webp" type="image/webp" />
+    <title>Maxima Abonos</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/products-section.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" href="assets/css/cookiebanner.style.css" />
+    <script src="assets/js/cookiebanner.script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        cookieBanner.init();
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo/logotipo.webp" alt="Maxima Logo" />
+        </a>
+
+        <!-- Mobile Right Items (Language + Toggle) -->
+        <div class="mobile-right-items">
+          <!-- Mobile Language Dropdown -->
+          <div class="language-dropdown d-lg-none">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="mobileLangDropdown"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/images/banderas/gb.png" alt="English" />
+                <span>EN</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/gb.png" alt="English" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/es.png" alt="Spanish" />
+                    <span>Español</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/fr.png" alt="French" />
+                    <span>Français</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">
+                <i class="fas fa-home"></i>
+                <span data-translate="home">HOME</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">
+                <i class="fas fa-box"></i>
+                <span data-translate="productos">PRODUCTS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span data-translate="contacto">CONTACT</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Desktop Language Dropdown -->
+          <div class="language-dropdown d-none d-lg-block">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="desktopLangDropdown"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/images/banderas/gb.png" alt="English" />
+                <span>EN</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/gb.png" alt="English" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/es.png" alt="Spanish" />
+                    <span>Español</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/banderas/fr.png" alt="French" />
+                    <span>Français</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero-section">
+      <!-- Video Background -->
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source
+          src="https://d17wmwjckt0fmo.cloudfront.net/videos/MaximaAbonos/videofabricarecortado.mov"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el tag de video.
+      </video>
+
+      <!-- Overlay -->
+      <div class="overlay"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1>
+          <span
+            class="highlight"
+            data-translate="Fertilizantes Orgánicos de Alta Calidad"
+            >Fertilizantes orgánicos de alta calidad</span
+          >
+        </h1>
+        <div class="hero-buttons">
+          <a href="#products" class="hero-btn primary">
+            <i class="fas fa-box"></i
+            ><span data-translate="Nuestros productos">Nuestros productos</span>
+          </a>
+          <a href="contact.html" class="hero-btn secondary">
+            <i class="fas fa-envelope"></i
+            ><span data-translate="Contactenos">Contactenos</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <a href="#about">
+          <i class="fas fa-chevron-down text-white"></i>
+          <!-- <div class="scroll-text">Descubre Más</div> -->
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="about-content text-center" data-aos="fade-up">
+              <span class="section-subtitle" data-translate="NUESTRA HISTORIA"
+                >OUR HISTORY</span
+              >
+              <h2 class="section-title">
+                <span data-translate="LÍDERES EN PRODUCCIÓN DE"
+                  >LEADERS IN PRODUCTION OF</span
+                >
+                <span
+                  class="highlight"
+                  data-translate="ABONOS ORGÁNICOS DE ALTA CALIDAD"
+                  >HIGH QUALITY ORGANIC FERTILIZERS</span
+                >
+              </h2>
+              <div class="section-text" data-aos="fade-up" data-aos-delay="100">
+                <p
+                  data-translate="Pioneros en el desarrollo de abonos líquidos con microorganismos, combinando innovación y sostenibilidad."
+                >
+                Pioneros en el desarrollo de abonos líquidos con microorganismos, combinando innovación y sostenibilidad.
+                </p>
+                <p
+                  data-translate="Con más de 12 años de investigación, colaboramos con universidades y centros científicos para impulsar una agricultura más eficiente y respetuosa con el medio ambiente."
+                >
+                Con más de 12 años de investigación, colaboramos con universidades y centros científicos para impulsar una agricultura más eficiente y respetuosa con el medio ambiente
+                </p>
+                <p
+                  data-translate="A través de un modelo de economía circular, transformamos los restos vegetales de la huerta de Europa en un fertilizante que, además de nutrir los cultivos, regenera los suelos."
+                >
+                A través de un modelo de economía circular, transformamos los restos vegetales de la huerta de Europa en un fertilizante que, además de nutrir los cultivos, regenera los suelos.
+                </p>
+              </div>
+              <div
+                class="stats-container"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row justify-content-center">
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <span class="stat-number">12+</span>
+                      <span
+                        class="stat-text"
+                        data-translate="Años de Investigación"
+                        >Años de Investigación</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <span class="stat-number">100%</span>
+                      <span class="stat-text" data-translate="Orgánico"
+                        >Orgánico</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="stat-item">
+                      <span class="stat-number">ECO</span>
+                      <span class="stat-text" data-translate="Sostenible"
+                        >Sostenible</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Factory Section -->
+    <section class="factory-section">
+      <div class="container-fluid p-0">
+        <div class="factory-content">
+          <div class="factory-overlay"></div>
+          <div class="container position-relative">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 text-center" data-aos="fade-up">
+                <div class="factory-header">
+                  <span
+                    class="section-subtitle"
+                    data-translate="INNOVACIÓN Y CALIDAD"
+                    >INNOVACIÓN Y CALIDAD</span
+                  >
+                  <h2 class="section-title">
+                    <span data-translate="NUESTRA">NUESTRA</span>
+                    <span class="highlight" data-translate="FÁBRICA"
+                      >FÁBRICA</span
+                    >
+                  </h2>
+                  <div class="factory-separator"></div>
+                </div>
+                <div
+                  class="factory-description"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p
+                    data-translate="Nuestra moderna planta de producción combina tecnología de vanguardia con procesos sostenibles para crear fertilizantes orgánicos de la más alta calidad. Con instalaciones certificadas y un riguroso control de calidad, garantizamos productos que cumplen con los estándares más exigentes del mercado internacional."
+                  >
+                  Nuestra moderna planta de producción combina tecnología de vanguardia con procesos sostenibles para crear fertilizantes orgánicos de la más alta calidad. Con instalaciones certificadas y un riguroso control de calidad, garantizamos productos que cumplen con los estándares más exigentes del mercado internacional.
+                  </p>
+                </div>
+                <div
+                  class="factory-features"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 data-translate="Economía Circular">
+                          Economía Circular
+                        </h3>
+                        <p data-translate="Transformamos residuos agrícolas en recursos valiosos">
+                          Transformamos residuos agrícolas en recursos valiosos.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 data-translate="Laboratorio Propio">
+                          Laboratorio Propio
+                        </h3>
+                        <p data-translate="Investigación y desarrollo continuo de nuevas soluciones">
+                          Investigación y desarrollo continuo de nuevas soluciones
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 data-translate="Certificaciones">Certificaciones</h3>
+                        <p data-translate="Cumplimos con los estándares más exigentes del sector">
+                          Cumplimos con los estándares más exigentes del sector
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="factory-button"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <a href="contact.html" class="btn-factory">
+                    <span data-translate="Solicita una visita"
+                      >Solicita una visita</span
+                    >
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <div class="gallery-header" data-aos="fade-up">
+              <span class="section-subtitle" data-translate="NUESTROS PROYECTOS"
+                >NUESTROS PROYECTOS</span
+              >
+              <h2 class="section-title">
+                <span data-translate="GALERÍA DE">GALERÍA DE</span>
+                <span class="highlight" data-translate="IMÁGENES">IMÁGENES</span>
+              </h2>
+              <div class="gallery-separator"></div>
+              <p
+                class="gallery-intro"
+                data-translate="Descubre nuestras instalaciones, procesos de producción y productos a través de nuestra galería fotográfica."
+              >
+              Descubre nuestras instalaciones, procesos de producción y productos a través de nuestra galería fotográfica.
+              </p>
+            </div>
+
+            <div class="gallery-filter" data-aos="fade-up" data-aos-delay="100">
+              <button
+                class="filter-btn active"
+                data-filter="*"
+                data-translate="Todos"
+              >
+                Todos
+              </button>
+              <button
+                class="filter-btn"
+                data-filter=".instalaciones"
+                data-translate="Instalaciones"
+              >
+              Instalaciones
+              </button>
+              <button
+                class="filter-btn"
+                data-filter=".proyectos"
+                data-translate="Productos"
+              >
+              Productos
+              </button>
+              <button
+                class="filter-btn"
+                data-filter=".procesos"
+                data-translate="Procesos"
+              >
+              Procesos
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gallery-items">
+            <div class="col-lg-4 col-md-6 gallery-column instalaciones">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/img1.webpg"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/img1.webp"
+                      alt="Instalaciones 1"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-column proyectos">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/img11.webp"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/img11.webp"
+                      alt="Producto 1"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 gallery-column proyectos">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/invernadero.webp"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/invernadero.webp"
+                      alt="Instalaciones 2"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-column procesos">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/lab.webp"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/lab.webp"
+                      alt="Producto 2"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-column instalaciones">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/fabrica.webp"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/fabrica.webp"
+                      alt="Proceso 2"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-column instalaciones">
+              <div class="gallery-item-wrapper">
+                <a
+                  href="assets/images/gallaryimages/img6.webp"
+                  class="gallery-popup-link"
+                >
+                  <div class="gallery-item">
+                    <img
+                      src="assets/images/gallaryimages/img6.webp"
+                      alt="Proceso 2"
+                      class="img-fluid"
+                    />
+                    <div class="gallery-overlay">
+                      <i class="fas fa-search-plus"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-60 section-md-105" id="products">
+      <div class="container">
+        <h2 class="section-title text-center" style="font-size: 3.5rem" data-translate="Nuestros productos">
+          Nuestros productos
+        </h2>
+
+        <div
+          class="row row-30 justify-content-sm-center text-md-start offset-top-40 galery-grid"
+        >
+          <!-- maxAmino Product -->
+          <div
+            class="col-lg-6 col-xl-4 d-flex product-item liquidos justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="product-card">
+              <div class="product-image-home d-flex justify-content-center">
+                <img
+                  src="assets/images/productos/Aonk.webp"
+                  alt="AON NK"
+                  class="img-responsive img-fullwidth"
+                />
+              </div>
+
+              <div class="product-info">
+                <h3 class="product-name" data-translate="AON NK">AON KN</h3>
+                <div class="product-features">
+                  <span class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado Ecológico</span
+                    >
+                  </span>
+                  <span class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <span data-translate="Origen Vegetal">Origen Vegetal</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxAmino Product (Hidden on smaller screens) -->
+          <div class="col-lg-6 col-xl-4 d-none d-xl-flex product-item liquidos"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          >
+            <div class="product-card">
+              <div class="product-image-home d-flex justify-content-center">
+                <img
+                  src="assets/images/productos/Molplus.webp"
+                  alt="MolPlus"
+                  class="img-responsive img-fullwidth"
+                />
+              </div>
+
+              <div class="product-info">
+                <h3 class="product-name" data-translate="MOL PLUS">MOL PLUS</h3>
+                <div class="product-features">
+                  <span class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado Ecológico</span
+                    >
+                  </span>
+                  <span class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <span data-translate="Origen Vegetal">Origen Vegetal</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- maxAmino Product (Hidden on smaller screens) -->
+          <div class="col-lg-6 col-xl-4 d-none d-xl-flex product-item liquidos"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          >
+            <div class="product-card">
+              <div class="product-image-home d-flex justify-content-center">
+                <img
+                  src="assets/images/productos/Orgaonk.webp"
+                  alt="OrgaOnk"
+                  class="img-responsive img-fullwidth"
+                />
+              </div>
+
+              <div class="product-info">
+                <h3 class="product-name" data-translate="ORGA ONK">ORGA ONK</h3>
+                <div class="product-features">
+                  <span class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-translate="Certificado Ecológico"
+                      >Certificado Ecológico</span
+                    >
+                  </span>
+                  <span class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <span data-translate="Origen Vegetal">Origen Vegetal</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offset-top-20 offset-md-top-40 text-center">
+          <a href="products.html" class="btn-factory">
+            <span data-translate="Todos los productos">Todos los productos</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plant Extract Section -->
+    <section class="extract-section">
+      <div class="container-fluid p-0">
+        <div class="extract-content">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <div class="extract-header" data-aos="fade-up">
+                  <h2 class="extract-title">
+                    <span data-translate="EXTRACTO">EXTRACTO</span>
+                    <span class="highlight" data-translate="VEGETAL"
+                      >VEGETAL</span
+                    >
+                    <span class="percentage">100%</span>
+                  </h2>
+                </div>
+                <div
+                  class="extract-description"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p
+                    data-translate="Con Máxima Abonos vas a poder sacarle el máximo rendimiento a tu cosecha."
+                  >
+                  Con Máxima Abonos vas a poder sacarle el máximo rendimiento a tu cosecha.
+                  </p>
+                  <p
+                    data-translate="Es una sabia elaborada de color oscuro, densidad 1.04 y 1.28 dependiendo del abono, gran variedad de nutrientes y micronutrientes, excelente complemento en el abonado mineral. Apto para todo tipo de cultivos incluidos los ecológicos."
+                  >
+                  Es una sabia elaborada de color oscuro, densidad 1.04 y 1.28 dependiendo del abono, gran variedad de nutrientes y micronutrientes, excelente complemento en el abonado mineral. Apto para todo tipo de cultivos incluidos los ecológicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Logo Slider Section -->
+    <section class="partners-section">
+      <div class="container-fluid">
+        <div class="partner-slider">
+          <div class="partner-slider-track">
+            <!-- First set of logos -->
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/UDA.webp"
+                alt="Universidad de Almería"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/JDA.webp"
+                alt="Junta de Andalucía"
+              />
+            </div>
+            <div class="partner-slide">
+              <img src="assets/images/certificados/CEU.webp" alt="CEU" />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/CCE.webp"
+                alt="Cámara de Comercio de España"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/UDA.webp"
+                alt="Universidad de Almería"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/JDA.webp"
+                alt="Junta de Andalucía"
+              />
+            </div>
+
+            <!-- Duplicate set of logos for seamless looping -->
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/UDA.webp"
+                alt="Universidad de Almería"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/JDA.webp"
+                alt="Junta de Andalucía"
+              />
+            </div>
+            <div class="partner-slide">
+              <img src="assets/images/certificados/CEU.webp" alt="CEU" />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/CCE.webp"
+                alt="Cámara de Comercio de España"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/UDA.webp"
+                alt="Universidad de Almería"
+              />
+            </div>
+            <div class="partner-slide">
+              <img
+                src="assets/images/certificados/JDA.webp"
+                alt="Junta de Andalucía"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="text-white pt-5 pb-3" style="background-color: #0a0a0a">
+      <div class="container">
+        <div class="row">
+          <!-- Nombre de la empresa y contacto -->
+
+          <div class="col-md-6 mb-4 margin-bottom-10">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/images/logo/logotipoblanco.webp"
+                alt="Maxima Logo"
+              />
+            </a>
+            <div class="offset-top-20">
+              <p class="mb-1">
+                <a
+                  href="mailto:comercial@maximaabonos.es"
+                  class="text-white"
+                  style="letter-spacing: 0.5px"
+                >
+                  comercial@maximaabonos.es
+                </a>
+              </p>
+              <p class="mb-1" data-translate="tel">Tel: +34 950 484 558</p>
+              <hr class="border-light my-2" style="width: 70px" />
+              <p class="mb-1">Paraje las Chozas de Redondo S.N.</p>
+              <p class="mb-0" data-translate="C.P. 04700 - El Ejido (Almería) - España">C.P. 04700 - El Ejido (Almería) - España</p>
+            </div>
+          </div>
+
+          <!-- Enlaces justificados a la derecha -->
+          <div class="col-md-6 mb-4 text-end">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none" data-translate="home">Inicio</a>
+              </li>
+              <li>
+                <a href="/products.html" class="text-white text-decoration-none" data-translate="productos"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a href="/contact.html" class="text-white text-decoration-none" data-translate="contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4" />
+
+        <div class="col-md-12 text-center d-flex justify-content-center gap-2">
+          <p class="copyright" data-translate="2025 Máxima Abonos, S.L. Todos los derechos reservados.">
+            &copy; 2025 Máxima Abonos, S.L. Todos los derechos reservados.
+            
+          </p>
+          <p class="copyright">
+            <a href="#" class="privacy-link" data-translate="Política de Privacidad">Política de Privacidad</a>
+          </p>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Language Scripts -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+  </body>
+</html>
