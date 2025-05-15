@@ -192,7 +192,6 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    margin-top: -56px; /* Adjust based on navbar height */
 }
 
 .bg-video {
@@ -593,7 +592,7 @@ body {
     position: relative;
     padding: 0;
     overflow: hidden;
-    background: url('../images/gallaryimages/img1.webp') no-repeat center center;
+    background: url('../images/gallaryimages/img1.avif') no-repeat center center;
     background-size: cover;
     min-height: 800px;
     display: flex;
