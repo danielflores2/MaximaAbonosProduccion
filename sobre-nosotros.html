@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link rel="icon" href="assets/images/logo/fav.webp" type="image/webp" />
+    <title>Sobre Nosotros - Máxima Abonos</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" href="assets/css/cookiebanner.style.css" />
+    <script src="assets/js/cookiebanner.script.js"></script>
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/logotipo.webp" alt="Maxima Logo" />
+          </a>
+  
+          <!-- Mobile Right Items (Language + Toggle) -->
+          <div class="mobile-right-items">
+            <!-- Mobile Language Dropdown -->
+            <div class="language-dropdown d-lg-none">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="mobileLangDropdown"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="assets/images/banderas/gb.png" alt="English" />
+                  <span>EN</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/gb.png" alt="English" />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/es.png" alt="Spanish" />
+                      <span>Español</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/fr.png" alt="French" />
+                      <span>Français</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Mobile Toggle Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+  
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index">
+                  <i class="fas fa-home"></i>
+                  <span data-translate="home">Inicio</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos">
+                  <i class="fas fa-box"></i>
+                  <span data-translate="productos">Productos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html">
+                  <i class="fas fa-box"></i>
+                  <span data-translate="sobbrenosotros">Sobre nosotros</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto">
+                  <i class="fas fa-envelope"></i>
+                  <span data-translate="contacto">Contacto</span>
+                </a>
+              </li>
+            </ul>
+  
+            <!-- Desktop Language Dropdown -->
+            <div class="language-dropdown d-none d-lg-block">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="desktopLangDropdown"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="assets/images/banderas/gb.png" alt="English" />
+                  <span>EN</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/gb.png" alt="English" />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/es.png" alt="Spanish" />
+                      <span>Español</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/fr.png" alt="French" />
+                      <span>Français</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section about-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-4 mb-4" data-aos="fade-up">Sobre Nosotros</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">
+              Pioneros en la producción de abono orgánico líquido con microorganismos
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="about-text" data-aos="fade-up">
+              <p class="mb-4">
+                En Máxima Abonos somos pioneros a nivel mundial en la producción de abono orgánico líquido con microorganismos, desarrollando una tecnología única desde el corazón agrícola de Almería, donde más de 60.000 hectáreas de invernaderos generan residuos vegetales al finalizar cada campaña.
+              </p>
+              
+              <p class="mb-4">
+                Nuestra planta automatizada al 100% transforma estos restos en un extracto vegetal orgánico de alta calidad. Extraemos la savia de las plantas, rica en nutrientes y microorganismos beneficiosos, lo que da lugar a un regenerador de suelos eficaz, certificado para cultivo ecológico y libre de patógenos.
+              </p>
+
+              <h3 class="mb-3">Beneficios de nuestro abono:</h3>
+              <ul class="benefits-list mb-4">
+                <li><i class="fas fa-check-circle"></i> Regenera y desaliniza suelos contaminados por abonos minerales.</li>
+                <li><i class="fas fa-check-circle"></i> Mejora la disponibilidad y asimilación de nutrientes por las plantas.</li>
+                <li><i class="fas fa-check-circle"></i> Favorece la vida microbiana saludable en el suelo.</li>
+                <li><i class="fas fa-check-circle"></i> Es filtrado para evitar obstrucciones en sistemas de riego.</li>
+              </ul>
+
+              <p class="mb-4">
+                Además, colaboramos con universidades como San Pablo CEU de Madrid, Universidad de Almería y centros como CESID y CSIC, con los que realizamos estudios, ensayos de campo y análisis metagenómicos para garantizar la eficacia y seguridad de nuestros productos. Gracias a nuestro laboratorio propio y controles externos, aseguramos una trazabilidad completa y un estándar de calidad excepcional.
+              </p>
+
+              <p class="mb-4">
+                Partiendo de nuestro extracto base, desarrollamos abonos ecológicos, organominerales y personalizados, adaptados a las necesidades específicas de cada cultivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #0a0a0a">
+        <div class="container">
+          <div class="row">
+            <!-- Nombre de la empresa y contacto -->
+  
+            <div class="col-md-6 mb-4 margin-bottom-10">
+              <a class="navbar-brand" href="index">
+                <img
+                  src="assets/images/logo/logotipoblanco.avif"
+                  alt="Maxima Logo"
+                />
+              </a>
+              <div class="offset-top-20">
+                <p class="mb-1">
+                  <a
+                    href="mailto:comercial@maximaabonos.es"
+                    class="text-white"
+                    style="letter-spacing: 0.5px"
+                  >
+                    comercial@maximaabonos.es
+                  </a>
+                </p>
+                <p class="mb-1" data-translate="tel">Tel: +34 950 484 558</p>
+                <hr class="border-light my-2" style="width: 70px" />
+                <p class="mb-1">Paraje las Chozas de Redondo S.N.</p>
+                <p
+                  class="mb-0"
+                  data-translate="C.P. 04700 - El Ejido (Almería) - España"
+                >
+                  C.P. 04700 - El Ejido (Almería) - España
+                </p>
+              </div>
+            </div>
+  
+            <!-- Enlaces justificados a la derecha -->
+            <div class="col-md-6 mb-4 text-md-end">
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none"
+                    data-translate="home"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/productos"
+                    class="text-white text-decoration-none"
+                    data-translate="productos"
+                    >Productos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/contacto"
+                    class="text-white text-decoration-none"
+                    data-translate="contacto"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <hr class="border-secondary mt-4" />
+  
+          <div
+            class="col-md-12 text-center d-flex flex-column flex-md-row justify-content-center gap-2"
+          >
+            <p
+              class="copyright"
+              data-translate="2025 Máxima Abonos, S.L. Todos los derechos reservados."
+            >
+              &copy; 2025 Máxima Abonos, S.L. Todos los derechos reservados.
+            </p>
+            <p class="copyright">
+              <a
+                href="https://clientes.prodat.es/privacidad/MLG/m%C3%A1ximaabonos"
+                target="_blank"
+                class="privacy-link"
+                data-translate="Política de Privacidad"
+                >Política de Privacidad</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Language Scripts -->
+        <script src="assets/js/language.js"></script>
+        <script src="assets/js/script.js"></script>
+  </body>
+</html> 

@@ -9,6 +9,12 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001;
 
+// Verificar API key
+if (!process.env.OPENAI_API_KEY) {
+  console.error('Error: OPENAI_API_KEY no está definida en el archivo .env');
+  process.exit(1);
+}
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -56,7 +62,12 @@ app.post('/api/chat', async (req, res) => {
       runStatus = runResult.status;
     }
     if (runStatus !== 'completed') {
-      return res.status(500).json({ error: 'El asistente no pudo completar la solicitud.', thread_id: threadId });
+      console.error('Error en el run:', runResult);
+      return res.status(500).json({ 
+        error: 'El asistente no pudo completar la solicitud.', 
+        details: runResult,
+        thread_id: threadId 
+      });
     }
     // Obtener el último mensaje del assistant
     const messages = await openai.beta.threads.messages.list(threadId);
@@ -64,11 +75,25 @@ app.post('/api/chat', async (req, res) => {
     const response = assistantMessage ? assistantMessage.content[0].text.value : 'Sin respuesta del asistente.';
     res.json({ response, thread_id: threadId });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Error al procesar la solicitud' });
+    console.error('Error detallado:', error);
+    res.status(500).json({ 
+      error: 'Error al procesar la solicitud',
+      details: error.message,
+      type: error.type
+    });
   }
+});
+
+// Endpoint de prueba
+app.get('/api/test', (req, res) => {
+  res.json({ 
+    status: 'ok',
+    apiKey: process.env.OPENAI_API_KEY ? 'Configurada' : 'No configurada',
+    assistantId: 'asst_AA6kOqtWeZeL9I4Wy5m1zzbV'
+  });
 });
 
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
+  console.log('API Key configurada:', process.env.OPENAI_API_KEY ? 'Sí' : 'No');
 }); 
