@@ -427,7 +427,10 @@
         showTypewriter(typingMsg, data.response || 'Sin respuesta del asistente.');
       } catch (err) {
         const typingMsg = messagesDiv.querySelector('.msg.assistant:last-child');
-        if (typingMsg) typingMsg.textContent = 'Error al procesar la solicitud.';
+        if (typingMsg) {
+          typingMsg.textContent = 'Error al procesar la solicitud: ' + (err.message || 'Error desconocido');
+          console.error('Error completo:', err);
+        }
       }
       sending = false;
       sendBtn.disabled = false;
