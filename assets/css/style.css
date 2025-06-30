@@ -1562,3 +1562,15 @@ body {
     font-weight: 600;
     margin-top: 2rem;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.paragraph-spacing {
+  margin-bottom: 3.5rem;
+}
+
+.extra-space {
+  height: 5rem;
+}
