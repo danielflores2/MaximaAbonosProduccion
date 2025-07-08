@@ -100,30 +100,30 @@
           <!-- Navbar Links -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index">
-                  <i class="fas fa-home"></i>
-                  <span data-translate="home">Inicio</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="productos">
-                  <i class="fas fa-box"></i>
-                  <span data-translate="productos">Productos</span>
-                </a>
-              </li>
+                          <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                <span data-translate="home">Inicio</span>
+              </a>
+            </li>
+                          <li class="nav-item">
+              <a class="nav-link" href="productos.html">
+                <i class="fas fa-box"></i>
+                <span data-translate="productos">Productos</span>
+              </a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link active" href="sobre-nosotros.html">
                   <i class="fas fa-box"></i>
                   <span data-translate="sobbrenosotros">Sobre nosotros</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto">
-                  <i class="fas fa-envelope"></i>
-                  <span data-translate="contacto">Contacto</span>
-                </a>
-              </li>
+                          <li class="nav-item">
+              <a class="nav-link" href="contacto.html">
+                <i class="fas fa-envelope"></i>
+                <span data-translate="contacto">Contacto</span>
+              </a>
+            </li>
             </ul>
   
             <!-- Desktop Language Dropdown -->
@@ -196,6 +196,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-10">
               <div class="about-content text-center" data-aos="fade-up">
+                <!--
                 <span class="section-subtitle" data-translate="NUESTRA HISTORIA"
                   >OUR HISTORY</span
                 >
@@ -209,7 +210,10 @@
                     >HIGH QUALITY ORGANIC FERTILIZERS</span
                   >
                 </h2>
-                <div class="extra-space"></div>
+
+                
+                
+                <div class="extra-space"></div>--> 
                 <div class="section-text text-justify paragraph-spacing " data-aos="fade-up" data-aos-delay="100">
                   <p
                     data-translate="Somos pioneros a nivel mundial en la producción de abono orgánico líquido con microorganismos, desarrollando una tecnología única desde el corazón agrícola de Almería, donde más de 60.000 hectáreas de invernaderos generan residuos vegetales al finalizar cada campaña.
@@ -227,71 +231,61 @@
                   </p>
                   
                 </div>
-                <div
-                  class="stats-container"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div class="row justify-content-center">
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">12+</span>
-                        <span
-                          class="stat-text"
-                          data-translate="Años de Investigación"
-                          >Años de Investigación</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-text" data-translate="Orgánico"
-                          >Orgánico</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">ECO</span>
-                        <span class="stat-text" data-translate="Sostenible"
-                          >Sostenible</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span
-                          class="stat-text"
-                          data-translate="Trazabilidad controlada"
-                          >Trazabilidad controlada</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">0%</span>
-                        <span
-                          class="stat-text"
-                          data-translate="Patógenos"
-                          >Patógenos</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span
-                          class="stat-text"
-                          data-translate="Universidades asociadas"
-                          >Universidades asociadas</span
-                        >
-                      </div>
-                    </div>
 
+
+                <div class="container" style="display: flex; height: 100%; width: 100%; align-items: center; justify-content: center;">
+                  <div class="grid" style="display: grid; height: 100%; width: 100%; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 16px; background-color: transparent; padding: 8px; border-radius: 8px; box-shadow: none;">
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 1; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">12+</span>
+                      <span class="stat-text" data-translate="Años de Investigación">Años de Investigación</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 1; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">100%</span>
+                      <span class="stat-text" data-translate="Orgánico">Orgánico</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 1; grid-row: span 4; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">ECO</span>
+                      <span class="stat-text" data-translate="Sostenible">Sostenible</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">100%</span>
+                      <span class="stat-text" data-translate="Trazabilidad controlada">Trazabilidad controlada</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 1; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">0%</span>
+                      <span class="stat-text" data-translate="Patógenos">Patógenos</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 3; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">3+</span>
+                      <span class="stat-text" data-translate="Universidades asociadas">Universidades asociadas</span>
+                    </div>
+                  
+                  
                   </div>
                 </div>
+                
+                
+                <div class="extra-space"></div>
+
+                
                 <div class="section-text text-justify paragraph-spacing " data-aos="fade-up" data-aos-delay="100">
                   <p
                     data-translate="Además, colaboramos con universidades como San Pablo CEU de Madrid, Universidad de Almería y centros como CESID y CSIC, con los que realizamos estudios, ensayos de campo y análisis metagenómicos para garantizar la eficacia y seguridad de nuestros productos. Gracias a nuestro laboratorio propio y controles externos, aseguramos una trazabilidad completa y un estándar de calidad excepcional.
@@ -299,51 +293,22 @@
                   >
 Además, colaboramos con universidades como San Pablo CEU de Madrid, Universidad de Almería y centros como CESID y CSIC, con los que realizamos estudios, ensayos de campo y análisis metagenómicos para garantizar la eficacia y seguridad de nuestros productos. Gracias a nuestro laboratorio propio y controles externos, aseguramos una trazabilidad completa y un estándar de calidad excepcional.
                   </p>
+                  <div class="section-text text-justify paragraph-spacing " data-aos="fade-up" data-aos-delay="100">
+                  
+                    <p
+                      data-translate="Partiendo de nuestro extracto base, desarrollamos abonos ecológicos, organominerales y personalizados, adaptados a las necesidades específicas de cada cultivo.
+  
+                      "
+                    >
+                    Partiendo de nuestro extracto base, desarrollamos abonos ecológicos, organominerales y personalizados, adaptados a las necesidades específicas de cada cultivo.
+                  </p>
+  
+                    
+                  </div>
 
                   
                 </div>
-                <div
-                class="stats-container"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row justify-content-center">
-                  
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <span class="stat-number">REGENERA</span>
-                      <span class="stat-text">Suelos Contaminados</span>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <span class="stat-number">ASIMILA</span>
-                      <span class="stat-text">Nutrientes con Eficacia</span>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="stat-item">
-                      <span class="stat-number">ACTIVA</span>
-                      <span class="stat-text">Microvida Saludable</span>
-                    </div>
-                  </div>
-                 
 
-                </div>
-                <div class="extra-space"></div>
-                <div class="section-text text-justify paragraph-spacing " data-aos="fade-up" data-aos-delay="100">
-                  
-                  <p
-                    data-translate="Partiendo de nuestro extracto base, desarrollamos abonos ecológicos, organominerales y personalizados, adaptados a las necesidades específicas de cada cultivo.
-
-                    "
-                  >
-                  Partiendo de nuestro extracto base, desarrollamos abonos ecológicos, organominerales y personalizados, adaptados a las necesidades específicas de cada cultivo.
-                </p>
-
-                  
-                </div>
-              </div>
               </div>
             </div>
           </div>
@@ -359,7 +324,7 @@ Además, colaboramos con universidades como San Pablo CEU de Madrid, Universidad
             <!-- Nombre de la empresa y contacto -->
   
             <div class="col-md-6 mb-4 margin-bottom-10">
-              <a class="navbar-brand" href="index">
+              <a class="navbar-brand" href="index.html">
                 <img
                   src="assets/images/logo/logotipoblanco.avif"
                   alt="Maxima Logo"
