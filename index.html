@@ -309,6 +309,7 @@
         filter: drop-shadow(0 2px 4px rgba(0,0,0,0.10));
       }
     </style>
+<script src="assets/js/chatbot-config.js"></script>
 <script>
   // Configuración personalizable
   const CHAT_CONFIG = {
@@ -318,6 +319,16 @@
     radius: 16,
     fontFamily: "Inter, sans-serif"
   };
+  
+  // Función para obtener la URL correcta según el entorno
+  function getApiUrl() {
+    // Si estamos en localhost, usar el servidor local
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      return 'http://localhost:3001/api/chat';
+    }
+    // Si estamos en Vercel, usar la función serverless
+    return '/api/chat';
+  }
   // Aplicar configuración visual
   if (CHAT_CONFIG.color) document.documentElement.style.setProperty('--chat-color', CHAT_CONFIG.color);
   if (CHAT_CONFIG.radius) document.documentElement.style.setProperty('--chat-radius', CHAT_CONFIG.radius + 'px');
@@ -432,18 +443,32 @@
       const thread_id = localStorage.getItem('thread_id') || '';
       // Mostrar animación de typing
       const typingMsg = addAssistantMsg('', true);
-                const res = await fetch(getApiUrl(), {
+      
+      const res = await fetch(getApiUrl(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, thread_id })
       });
+      
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      
       const data = await res.json();
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+      
       if (data.thread_id) localStorage.setItem('thread_id', data.thread_id);
       // Reemplazar el typing por la respuesta animada
       showTypewriter(typingMsg, data.response || 'Sin respuesta del asistente.');
     } catch (err) {
+      console.error('Chat error:', err);
       const typingMsg = messagesDiv.querySelector('.msg.assistant:last-child');
-      if (typingMsg) typingMsg.textContent = 'Error al procesar la solicitud.';
+      if (typingMsg) {
+        typingMsg.textContent = `Error: ${err.message || 'Error al procesar la solicitud.'}`;
+      }
     }
     sending = false;
     sendBtn.disabled = false;
@@ -470,6 +495,13 @@
     widget.classList.remove('open');
     fab.title = 'Abrir chat';
     fab.classList.remove('small');
+  };
+  
+  // Funcionalidad del botón de reset
+  document.getElementById('chat-reset').onclick = () => {
+    localStorage.removeItem('thread_id');
+    clearMessages();
+    addAssistantMsg(CHAT_CONFIG.botDescription);
   };
   
   // Ocultar bocadillo al abrir el chat o tras 6 segundos
