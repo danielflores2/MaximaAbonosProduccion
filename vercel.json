@@ -9,9 +9,6 @@
       "memory": 256
     }
   },
-  "env": {
-    "OPENAI_API_KEY": "@openai_api_key"
-  },
   "headers": [
     {
       "source": "/api/chat",
