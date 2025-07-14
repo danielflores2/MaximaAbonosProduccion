@@ -1,16 +1,16 @@
 {
-  "name": "maxima-chatbot",
+  "name": "maxima-abonos",
   "version": "1.0.0",
-  "description": "Chatbot para Maxima Abonos",
-  "main": "assets/js/server.js",
+  "description": "Sitio web de Maxima Abonos",
+  "type": "module",
   "scripts": {
-    "start": "node assets/js/server.js"
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "openai": "^4.28.0",
-    "express-rate-limit": "^7.1.5"
+    "openai": "^4.20.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 } 

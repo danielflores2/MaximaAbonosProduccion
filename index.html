@@ -432,7 +432,7 @@
       const thread_id = localStorage.getItem('thread_id') || '';
       // Mostrar animación de typing
       const typingMsg = addAssistantMsg('', true);
-      const res = await fetch('http://localhost:3001/api/chat', {
+                const res = await fetch(getApiUrl(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, thread_id })
