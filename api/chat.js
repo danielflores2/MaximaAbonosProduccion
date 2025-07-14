@@ -54,18 +54,30 @@ export default async function handler(req, res) {
       assistant_id: 'asst_AA6kOqtWeZeL9I4Wy5m1zzbV',
     });
 
-    // Esperar a que termine el run (polling)
+    // Esperar a que termine el run (polling optimizado)
     let runStatus = run.status;
     let runResult = run;
+    let attempts = 0;
+    const maxAttempts = 60; // 60 segundos máximo
     
-    while (runStatus !== 'completed' && runStatus !== 'failed' && runStatus !== 'cancelled') {
-      await new Promise(r => setTimeout(r, 1000));
+    while (runStatus !== 'completed' && runStatus !== 'failed' && runStatus !== 'cancelled' && attempts < maxAttempts) {
+      attempts++;
+      // Polling más agresivo: empezar con 250ms y aumentar gradualmente
+      const delay = Math.min(250 + (attempts * 50), 1000);
+      await new Promise(r => setTimeout(r, delay));
+      
       runResult = await openai.beta.threads.runs.retrieve(threadId, run.id);
       runStatus = runResult.status;
     }
 
     if (runStatus !== 'completed') {
       console.error('Error en el run:', runResult);
+      if (attempts >= maxAttempts) {
+        return res.status(408).json({ 
+          error: 'El asistente tardó demasiado en responder. Intenta de nuevo.', 
+          thread_id: threadId 
+        });
+      }
       return res.status(500).json({ 
         error: 'El asistente no pudo completar la solicitud.', 
         details: runResult,

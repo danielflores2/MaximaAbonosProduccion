@@ -4,7 +4,7 @@ const CHATBOT_CONFIG = {
   // Para desarrollo local:
   // API_URL: 'http://localhost:3001/api/chat'
   // Para producción en Vercel:
-  API_URL: '/api/chat',
+  API_URL: '/api/chat-fast',
   
   // Configuración del bot
   botName: "Maxima Abonos",

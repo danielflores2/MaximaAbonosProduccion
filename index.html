@@ -327,7 +327,7 @@
       return 'http://localhost:3001/api/chat';
     }
     // Si estamos en Vercel, usar la función serverless
-    return '/api/chat';
+    return '/api/chat-fast';
   }
   // Aplicar configuración visual
   if (CHAT_CONFIG.color) document.documentElement.style.setProperty('--chat-color', CHAT_CONFIG.color);
@@ -418,6 +418,7 @@
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
     return msg;
   }
+  
   function addUserMsg(text) { addMsg(text, 'user'); }
   function clearMessages() { messagesDiv.innerHTML = ''; }
   
@@ -440,14 +441,14 @@
     sending = true;
     sendBtn.disabled = true;
     try {
-      const thread_id = localStorage.getItem('thread_id') || '';
-      // Mostrar animación de typing
+      const conversation_history = JSON.parse(localStorage.getItem('conversation_history') || '[]');
+      // Mostrar solo los 3 puntos
       const typingMsg = addAssistantMsg('', true);
       
       const res = await fetch(getApiUrl(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text, thread_id })
+        body: JSON.stringify({ message: text, conversation_history })
       });
       
       if (!res.ok) {
@@ -460,7 +461,9 @@
         throw new Error(data.error);
       }
       
-      if (data.thread_id) localStorage.setItem('thread_id', data.thread_id);
+      if (data.conversation_history) {
+        localStorage.setItem('conversation_history', JSON.stringify(data.conversation_history));
+      }
       // Reemplazar el typing por la respuesta animada
       showTypewriter(typingMsg, data.response || 'Sin respuesta del asistente.');
     } catch (err) {
@@ -475,16 +478,18 @@
     input.focus();
   };
   
-  // Animación tipo máquina de escribir
+  // Animación tipo máquina de escribir ultra rápida
   function showTypewriter(msgDiv, text) {
     msgDiv.innerHTML = '';
     let i = 0;
     function type() {
       if (i < text.length) {
-        msgDiv.textContent += text[i];
-        i++;
+        // Escribir hasta 5 caracteres a la vez para máxima velocidad
+        const charsToAdd = Math.min(5, text.length - i);
+        msgDiv.textContent += text.substring(i, i + charsToAdd);
+        i += charsToAdd;
         messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        setTimeout(type, 12 + Math.random()*30); // velocidad variable
+        setTimeout(type, 4 + Math.random()*6); // velocidad ultra rápida
       }
     }
     type();
@@ -499,7 +504,7 @@
   
   // Funcionalidad del botón de reset
   document.getElementById('chat-reset').onclick = () => {
-    localStorage.removeItem('thread_id');
+    localStorage.removeItem('conversation_history');
     clearMessages();
     addAssistantMsg(CHAT_CONFIG.botDescription);
   };
