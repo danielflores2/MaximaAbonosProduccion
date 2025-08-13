@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link rel="icon" href="assets/images/logo/fav.webp" type="image/webp" />
+    <title>Sobre Nosotros - Máxima Abonos</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Magnific Popup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" href="assets/css/cookiebanner.style.css" />
+    <script src="assets/js/cookiebanner.script.js"></script>
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/logotipo.webp" alt="Maxima Logo" />
+          </a>
+  
+          <!-- Mobile Right Items (Language + Toggle) -->
+          <div class="mobile-right-items">
+            <!-- Mobile Language Dropdown -->
+            <div class="language-dropdown d-lg-none">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="mobileLangDropdown"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="assets/images/banderas/gb.png" alt="English" />
+                  <span>EN</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/gb.png" alt="English" />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/es.png" alt="Spanish" />
+                      <span>Español</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/fr.png" alt="French" />
+                      <span>Français</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Mobile Toggle Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+  
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                          <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                <span data-translate="home">Inicio</span>
+              </a>
+            </li>
+                          <li class="nav-item">
+              <a class="nav-link" href="productos.html">
+                <i class="fas fa-box"></i>
+                <span data-translate="productos">Productos</span>
+              </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="sobre-nosotros.html">
+                  <i class="fas fa-box"></i>
+                  <span data-translate="sobrenosotros">Sobre nosotros</span>
+                </a>
+              </li>
+                          <li class="nav-item">
+              <a class="nav-link" href="contacto.html">
+                <i class="fas fa-envelope"></i>
+                <span data-translate="contacto">Contacto</span>
+              </a>
+            </li>
+            </ul>
+  
+            <!-- Desktop Language Dropdown -->
+            <div class="language-dropdown d-none d-lg-block">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="desktopLangDropdown"
+                  data-bs-toggle="dropdown"
+                >
+                  <img src="assets/images/banderas/gb.png" alt="English" />
+                  <span>EN</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/gb.png" alt="English" />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/es.png" alt="Spanish" />
+                      <span>Español</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/banderas/fr.png" alt="French" />
+                      <span>Français</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-10 text-center">
+                  <div class="product-hero-content" data-aos="fade-up">
+                      <h1 class="product-title" data-translate="sobrenosotros">
+                          Sobre nosotros
+                      </h1>
+                      <div class="product-subtitle">
+                          <span class="line"></span>
+                          <p data-translate="Pioneros en la producción de abono orgánico líquido con microorganismos"> Pioneros en la producción de abono orgánico líquido con microorganismos</p>
+                          <span class="line"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="product-hero-wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+              <path fill="#fff" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,16C1200,11,1320,21,1380,26.7L1440,32L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+          </svg>
+      </div>
+  </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="about-content text-center" data-aos="fade-up">
+                <!--
+                <span class="section-subtitle" data-translate="NUESTRA HISTORIA"
+                  >OUR HISTORY</span
+                >
+                <h2 class="section-title">
+                  <span data-translate="LÍDERES EN PRODUCCIÓN DE"
+                    >LEADERS IN PRODUCTION OF</span
+                  >
+                  <span
+                    class="highlight"
+                    data-translate="ABONOS ORGÁNICOS DE ALTA CALIDAD"
+                    >HIGH QUALITY ORGANIC FERTILIZERS</span
+                  >
+                </h2>
+
+                
+                
+                <div class="extra-space"></div>--> 
+                <div class="section-text text-justify paragraph-spacing " data-aos="fade-up" data-aos-delay="100">
+                  <p
+                    data-translate="Máxima Abonos es la primera planta de abono orgánico líquido con microorganismos en la provincia de Almería, una zona con más de 60.000 hectáreas de invernaderos en plena producción intensiva."
+                  >
+                  Máxima Abonos es la primera planta de abono orgánico líquido con microorganismos en la provincia de Almería, una zona con más de 60.000 hectáreas de invernaderos en plena producción intensiva.
+                  </p>
+                  <p
+                    data-translate="A partir de restos vegetales locales, extraemos una savia 100 % orgánica mediante un proceso totalmente automatizado. Esta savia contiene una alta carga microbiana beneficiosa, clave para regenerar suelos agotados, desalinizar terrenos afectados por el uso intensivo de abonos minerales y desbloquear nutrientes esenciales."
+                  >
+                  A partir de restos vegetales locales, extraemos una savia 100 % orgánica mediante un proceso totalmente automatizado. Esta savia contiene una alta carga microbiana beneficiosa, clave para regenerar suelos agotados, desalinizar terrenos afectados por el uso intensivo de abonos minerales y desbloquear nutrientes esenciales.
+                  </p>
+                  <p
+                    data-translate="Nuestro extracto está libre de patógenos, completamente filtrado y es totalmente asimilable por la planta, lo que lo convierte en una solución segura y eficaz para sistemas de riego."
+                  >
+                  Nuestro extracto está libre de patógenos, completamente filtrado y es totalmente asimilable por la planta, lo que lo convierte en una solución segura y eficaz para sistemas de riego.
+                  </p>
+                  <p
+                    data-translate="Con esta base, formulamos abonos ecológicos, órgano-minerales y a medida, adaptados a las necesidades de cada cultivo. Trabajamos en colaboración con universidades como la de Almería y el CEU San Pablo, y centros de investigación como el CSIC, con quienes validamos científicamente cada avance."
+                  >
+                  Con esta base, formulamos abonos ecológicos, órgano-minerales y a medida, adaptados a las necesidades de cada cultivo. Trabajamos en colaboración con universidades como la de Almería y el CEU San Pablo, y centros de investigación como el CSIC, con quienes validamos científicamente cada avance.
+                  </p>
+                </div>
+
+
+                <div class="container" style="display: flex; height: 100%; width: 100%; align-items: center; justify-content: center;">
+                  <div class="grid" style="display: grid; height: 100%; width: 100%; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 16px; background-color: transparent; padding: 8px; border-radius: 8px; box-shadow: none;">
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 1; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">12+</span>
+                      <span class="stat-text" data-translate="Años de Investigación">Años de Investigación</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 1; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">100%</span>
+                      <span class="stat-text" data-translate="Orgánico">Orgánico</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 1; grid-row: span 4; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">ECO</span>
+                      <span class="stat-text" data-translate="Sostenible">Sostenible</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 2; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">100%</span>
+                      <span class="stat-text" data-translate="Trazabilidad controlada">Trazabilidad controlada</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 1; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">0%</span>
+                      <span class="stat-text" data-translate="Patógenos">Patógenos</span>
+                    </div>
+                  
+                    <div class="stat-item" 
+                      style="grid-column: span 3; grid-row: span 2; display: flex; align-items: center; justify-content: center; flex-direction: column;"
+                    >
+                      <span class="stat-number">3+</span>
+                      <span class="stat-text" data-translate="Universidades asociadas">Universidades asociadas</span>
+                    </div>
+                  
+                  
+                  </div>
+                </div>
+
+                <style>
+                  @media (max-width: 768px) {
+                    .grid {
+                      grid-template-columns: repeat(2, 1fr) !important;
+                      grid-template-rows: repeat(3, 1fr) !important;
+                      height: auto !important;
+                    }
+                    
+                    .stat-item:nth-child(1) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                    
+                    .stat-item:nth-child(2) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                    
+                    .stat-item:nth-child(3) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                    
+                    .stat-item:nth-child(4) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                    
+                    .stat-item:nth-child(5) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                    
+                    .stat-item:nth-child(6) {
+                      grid-column: span 1 !important;
+                      grid-row: span 1 !important;
+                    }
+                  }
+                </style>
+
+                
+                <div class="section-text text-justify paragraph-spacing mt-5" data-aos="fade-up" data-aos-delay="100">
+                  <p
+                    data-translate="En Máxima Abonos apostamos por la innovación agrícola, la sostenibilidad del suelo y la trazabilidad del producto, ofreciendo soluciones reales para una agricultura más productiva y respetuosa con el medio ambiente."
+                  >
+                  En Máxima Abonos apostamos por la innovación agrícola, la sostenibilidad del suelo y la trazabilidad del producto, ofreciendo soluciones reales para una agricultura más productiva y respetuosa con el medio ambiente.
+                  </p>
+                  
+                </div>
+
+                <div class="section-text text-justify paragraph-spacing mt-5" data-aos="fade-up" data-aos-delay="100">
+                  <p
+                    data-translate=""
+                  >
+En esta misma línea de innovación, hemos creado a Ana, nuestra asistente con IA disponible 24/7 para atenderte por teléfono o chat, siempre lista para resolver tus dudas y acompañarte en cada paso.
+</p>
+
+                  <p
+                    data-translate=""
+                  >
+Puedes hablar con ella aquí: 
+👉🏼
+<a href="https://www.delphi.ai/maxima-abonos" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-decoration-color: #000;">
+https://www.delphi.ai/maxima-abonos
+</a>
+</p>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #0a0a0a">
+        <div class="container">
+          <div class="row">
+            <!-- Nombre de la empresa y contacto -->
+  
+            <div class="col-md-6 mb-4 margin-bottom-10">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/images/logo/logotipoblanco.avif"
+                  alt="Maxima Logo"
+                />
+              </a>
+              <div class="offset-top-20">
+                <p class="mb-1">
+                  <a
+                    href="mailto:administración@maximaabonos.es"
+                    class="text-white"
+                    style="letter-spacing: 0.5px"
+                  >
+                    administración@maximaabonos.es
+                  </a>
+                </p>
+                <p class="mb-1" data-translate="tel">Tel: +34 950 484 558</p>
+                <hr class="border-light my-2" style="width: 70px" />
+                <p class="mb-1">Paraje las Chozas de Redondo S.N.</p>
+                <p
+                  class="mb-0"
+                  data-translate="C.P. 04700 - El Ejido (Almería) - España"
+                >
+                  C.P. 04700 - El Ejido (Almería) - España
+                </p>
+              </div>
+            </div>
+  
+            <!-- Enlaces justificados a la derecha -->
+            <div class="col-md-6 mb-4 text-md-end">
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none"
+                    data-translate="home"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/productos"
+                    class="text-white text-decoration-none"
+                    data-translate="productos"
+                    >Productos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/sobre-nosotros.html"
+                    class="text-white text-decoration-none"
+                    data-translate="sobrenosotros"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/contacto"
+                    class="text-white text-decoration-none"
+                    data-translate="contacto"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <hr class="border-secondary mt-4" />
+  
+          <div
+            class="col-md-12 text-center d-flex flex-column flex-md-row justify-content-center gap-2"
+          >
+            <p
+              class="copyright"
+              data-translate="2025 Máxima Abonos, S.L. Todos los derechos reservados."
+            >
+              &copy; 2025 Máxima Abonos, S.L. Todos los derechos reservados.
+            </p>
+            <p class="copyright">
+              <a
+                href="https://clientes.prodat.es/privacidad/MLG/m%C3%A1ximaabonos"
+                target="_blank"
+                class="privacy-link"
+                data-translate="Política de Privacidad"
+                >Política de Privacidad</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Language Scripts -->
+        <script src="assets/js/language.js"></script>
+        <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -16,7 +16,8 @@ class LanguageManager {
             '/assets/json/maxmicros.json',
             '/assets/json/molplus.json',
             '/assets/json/orgaonk.json',
-            '/assets/json/contacto.json'
+            '/assets/json/contacto.json',
+            '/assets/json/sobrebnosotros.json',
             
         ];
         this.init();

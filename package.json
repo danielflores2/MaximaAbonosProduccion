@@ -1,0 +1,16 @@
+{
+  "name": "maxima-abonos",
+  "version": "1.0.0",
+  "description": "Sitio web de Maxima Abonos",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "openai": "^4.20.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -18,7 +18,7 @@ var config = {
   showCloseIcon: false,
   showDeclineBtn: true,
   fullWidth: false,
-  displayPosition: "right",
+  displayPosition: "left",
   settingsBtnLabel: "Customize",
   delay: 2000,
   expires: 365,
